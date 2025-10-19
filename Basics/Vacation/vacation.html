@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vacation Destination</title>
+</head>
+
+    <style>
+        * {box-sizing: border-box;}
+
+        nav {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: flex-end;
+            padding: 12px 50px;
+            gap: 30px;
+        }
+
+        nav img {width: 50px;}
+        nav a:first-of-type {margin-left: auto;}
+        nav .login_button {
+            border: 1px solid black;
+            padding: 8px 16px
+            
+        }
+
+        nav {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: flex-end;
+            padding: 12px 50px;
+            gap: 30px;
+        }
+            
+        
+
+        header{
+            display:flex;
+            align-items: center;
+            background-color: lightblue;
+            border-top: 5px;
+            border-style: solid;
+            border-color: black;
+            border-bottom: 5px;
+            border-style: solid;
+            border-color: black;
+        }
+
+        header img {width: 100%;
+        border-radius: 5%;
+        }
+        header div {width: 50%;}
+        header .image {
+            border-radius: 5%;
+            height: 300px;
+            overflow: hidden;
+            display: flex;
+            align-items: flex-end;
+            margin: 30px;
+        }
+
+
+
+
+        
+    </style>
+<body>
+    <nav>
+        <img src="https://images.vexels.com/media/users/3/137476/isolated/preview/d89adf16dc6fce8b9abe54aec3af2546-four-peak-mountain-icon.png" alt="Mountains">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Destinations</a>
+        <a href="#">Sell</a>
+        <a href="#">Contact</a>
+        <a href="#" class="login_button">Login/Sign Up</a>
+    </nav>
+
+        <header>
+            <div>
+                <h1>Snowy Mountains</h1>
+                <p>Some people hide away from blustery weather, or plan their winter vacations in tropical locales. But snow lovers are always looking for places to embrace winter and its stark beauty.</p>
+                <a href="#">Book Now</a>
+            </div>
+
+            <div class="image">
+                <img src="https://www.usatoday.com/gcdn/presto/2018/11/17/USAT/4c293082-f57d-4ee5-8734-31f923795e86-PC1.jpg?crop=1023,575,x1,y172&width=660&height=372&format=pjpg&auto=webp">
+            </div>
+        </header>
+        <div>
+            <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f2f2f2;
+    }
+
+    .circle-gallery {
+      display: flex;
+      justify-content: center;
+      gap: 110px;
+      padding: 40px 0;
+      background-color: white;
+    }
+
+    .circle-gallery img {
+      width: 170px;
+      height: 170px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 3px solid #fff;
+    }
+
+    .card-section {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      padding: 40px;
+      background-color: lightblue;
+    }
+
+    .card {
+      background-color: white;
+      width: 500px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      border-radius: 4px;
+      overflow: hidden;
+      text-align: center;
+      padding: 15px;
+      padding-top: 20px;
+      margin-right: 50px;
+      margin-left: 50px;
+    }
+
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .card h3 {
+      margin: 16px 0 8px;
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    .card p {
+      padding: 0 16px 16px;
+      color: #333;
+      font-size: 14px;
+    }
+  </style>
+<body>
+
+  <div class="circle-gallery">
+    <img src="img/snow.jpeg" alt="snow.jpeg">
+    <img src="img/tropical.jpeg" alt="">
+    <img src="img/tropical laggon.jpeg" alt="lagoon.jpeg">
+    <img src="img/swiss alps.jpeg" alt="swiss alps">
+    <img src="img/cabin.jpeg" alt="cabin">
+  </div>
+
+  <div class="card-section">
+    <div class="card">
+      <img src="img/swiss alps.jpeg" alt="swiss alps">
+      <h3>Snow Town</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In fermentum vehicula magna, ac auctor ipsum aliquam id. Suspendisse eros augue, sagittis quis elementum mattis, lobortis et diam. Praesent dignissim magna vitae eros facilisis vulputate. </p>
+    </div>
+    <div class="card">
+      <img src="img/cabin.jpeg" alt="cabin">
+      <h3>Cozy Cabin</h3>
+      <p>Duis convallis mauris odio, nec semper sem condimentum vel. Phasellus pulvinar sed nibh nec porttitor. Quisque porttitor, tortor non aliquet elementum, leo eros laoreet tellus, non vulputate tellus felis nec nisl.</p>
+    </div>
+    <div class="card">
+      <img src="img/tropical laggon.jpeg" alt="Tropical laggon">
+      <h3>Lagoon Resort</h3>
+      <p>Vivamus consequat sapien non tortor vehicula, in volutpat tellus convallis. Nullam finibus neque at viverra sollicitudin. </p>
+    </div>
+  </div>
+</body>
+</html>

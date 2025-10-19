@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Company Landing Page</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #eee;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .nav-left,
+    .nav-right {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+    }
+
+    .nav-left a,
+    .nav-right a {
+      text-decoration: none;
+      color: #000;
+      font-size: 14px;
+    }
+
+    .nav-right .btn {
+      padding: 6px 14px;
+      background: #000;
+      color: #fff;
+      border-radius: 4px;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    .logo {
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    .hero {
+      background: #ccc;
+      text-align: center;
+      padding: 60px 20px;
+    }
+
+    .hero h1 {
+      font-size: 32px;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      max-width: 600px;
+      margin: 0 auto 20px auto;
+      font-size: 16px;
+    }
+
+    .hero .btn {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 10px 20px;
+      background: #000;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 4px;
+      font-size: 14px;
+    }
+
+    .hero .image-placeholder {
+      width: 600px;
+      height: 300px;
+      background: #fff;
+      border: 2px solid #000;
+      margin: 40px auto 0 auto;
+      position: relative;
+    }
+
+    .hero .image-placeholder::before,
+    .hero .image-placeholder::after {
+      content: "";
+      position: absolute;
+      background: #000;
+    }
+
+    .hero .image-placeholder::before {
+      width: 2px;
+      height: 100%;
+      left: 50%;
+      transform: translateX(-50%) rotate(45deg);
+    }
+
+    .hero .image-placeholder::after {
+      width: 2px;
+      height: 100%;
+      left: 50%;
+      transform: translateX(-50%) rotate(-45deg);
+    }
+
+    .features {
+      background: #f3f3f3;
+      padding: 60px 40px;
+      display: flex;
+      gap: 40px;
+    }
+
+    .features .left {
+      flex: 1;
+    }
+
+    .features .left h2 {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+
+    .features .left p {
+      margin-bottom: 20px;
+    }
+
+    .features .left a {
+      color: #000;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .features .right {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .feature-item {
+      display: flex;
+      gap: 20px;
+      align-items: flex-start;
+    }
+
+    .feature-item .icon {
+      width: 60px;
+      height: 60px;
+      background: #fff;
+      border: 2px solid #000;
+      position: relative;
+    }
+
+    .feature-item .icon::before,
+    .feature-item .icon::after {
+      content: "";
+      position: absolute;
+      background: #000;
+    }
+
+    .feature-item .icon::before {
+      width: 2px;
+      height: 100%;
+      left: 50%;
+      transform: translateX(-50%) rotate(45deg);
+    }
+
+    .feature-item .icon::after {
+      width: 2px;
+      height: 100%;
+      left: 50%;
+      transform: translateX(-50%) rotate(-45deg);
+    }
+
+    .feature-item p {
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="nav-left">
+      <a href="#">Feature</a>
+      <a href="#">User Examples</a>
+      <a href="#">Pricing</a>
+      <a href="#">Resources ▾</a>
+    </div>
+    <div class="logo">Company Logo</div>
+    <div class="nav-right">
+      <a href="#">Docs</a>
+      <a href="#" class="btn">Get Started</a>
+    </div>
+  </header>
+
+  <section class="hero">
+    <h1>Title copy goes here</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse tincidunt sagittis eros. Quisque quis euismod lorem. Etiam sodales ac felis id interdum.</p>
+    <a href="#" class="btn">Get Started</a>
+    <div class="image-placeholder"></div>
+  </section>
+
+  <section class="features">
+    <div class="left">
+      <h2>Features section</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse tincidunt sagittis eros. Quisque quis euismod lorem. Etiam sodales ac felis id interdum.</p>
+      <a href="#">Learn More →</a>
+    </div>
+    <div class="right">
+      <div class="feature-item">
+        <div class="icon"></div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse tincidunt sagittis eros.</p>
+      </div>
+      <div class="feature-item">
+        <div class="icon"></div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse tincidunt sagittis eros.</p>
+      </div>
+      <div class="feature-item">
+        <div class="icon"></div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse tincidunt sagittis eros.</p>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>
