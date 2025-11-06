@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile Card</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      font-family: "Inter", sans-serif;
+    }
+
+    body {
+      background-color: #141414;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .card {
+      background-color: #1f1f1f;
+      border-radius: 10px;
+      padding: 30px;
+      width: 320px;
+      text-align: center;
+    }
+
+    .card img {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      margin-bottom: 20px;
+    }
+
+    .card h2 {
+      margin: 10px 0 5px;
+      font-size: 20px;
+      font-weight: 600;
+    }
+
+    .card p.location {
+      color: #c6f91f;
+      font-size: 14px;
+      margin: 0 0 20px;
+      font-weight: 600;
+    }
+
+    .card p.bio {
+      font-size: 14px;
+      color: #b3b3b3;
+      margin-bottom: 20px;
+    }
+
+    .links a {
+      display: block;
+      text-decoration: none;
+      color: white;
+      background-color: #333;
+      padding: 12px;
+      border-radius: 8px;
+      margin: 8px 0;
+      transition: all 0.2s ease;
+      font-weight: 600;
+    }
+
+    .links a.github {
+      background-color: #c6f91f;
+      color: black;
+    }
+
+    .links a:hover {
+      background-color: lime;
+    }
+
+    .links a.github:hover {
+      background-color: #b3e61b;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <img src="/Users/dannynorth/Pictures/Photos Library.photoslibrary/resources/derivatives/1/14BF746A-5EAC-489A-8649-210C01C57A16_1_105_c.jpeg" alt="Profile picture">
+    <h2>Danny North</h2>
+    <p class="location">Fort Myers, Florida</p>
+    <p class="bio">"Iliketurtles"</p>
+    <div class="links">
+      <a href="https://supercell.com/en/games/clashroyale/" class="Clash Royale">Clash Royale</a>
+      <a href="https://www.youtube.com/">YouTube</a>
+      <a href="https://www.instagram.com/">Instagram</a>
+      <a href="https://supercell.com/en/games/brawlstars/">Brawl Stars</a>
+      <a href="https://www.roblox.com/">Roblox</a>
+    </div>
+  </div>
+</body>
+</html>
