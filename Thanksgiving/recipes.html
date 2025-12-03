@@ -19,6 +19,22 @@ text-align: center;
 font-size: 2rem;
 font-weight: bold;
 }
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 15px;
+    margin: 0;
+    background-color: #e6c8a5;
+}
+nav a {
+    text-decoration: none;
+    color: #5a3010;
+    font-weight: bold;
+}
+
 .container {
 display: grid;
 grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -60,16 +76,37 @@ background-color: #c25c2a;
 color: white;
 margin-top: 30px;
 }
+
+blockquote.prep-time {
+  display: inline-block;        
+  margin: 0.2rem 0;            
+  padding: 0.45rem 0.75rem;     
+  background: hsl(39, 58%, 86%); 
+  border: 1px solid #c25c2a; 
+  border-radius: 8px;                                  
+  color: hsl(44, 100%, 25%);    
+  box-shadow: 0 1px 2px rgba(0,0,0,0.06);
+}
 </style>
 </head>
+
 <body>
-<header>Delicious Thanksgiving Recipes</header>
+<header>Delicious Thanksgiving Recipes
+    <nav>
+<ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="recipes.html">Recipes</a></li>
+    <li><a href="history.html">History</a></li>
+</ul>
+</nav>
+</header>
 <div class="container">
 <div class="card">
 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEl4jNDLIBKIbLfaVeF4YZRETlMITXuCxUqA&s" alt="Roast Turkey" />
 <div class="card-content">
 <h3>Classic Roast Turkey</h3>
 <p>A juicy, golden-brown turkey seasoned with herbs and butter. Perfect centerpiece for any Thanksgiving table.</p>
+<blockquote class="prep-time">Prep Time: 1:30hrs</blockquote>
 </div>
 </div>
 
@@ -79,6 +116,7 @@ margin-top: 30px;
 <div class="card-content">
 <h3>Garlic Mashed Potatoes</h3>
 <p>Fluffy mashed potatoes whipped with butter, cream, and roasted garlic for rich flavor.</p>
+<blockquote class="prep-time">Prep Time: 30mins</blockquote>
 </div>
 </div>
 
@@ -88,6 +126,7 @@ margin-top: 30px;
 <div class="card-content">
 <h3>Pumpkin Pie</h3>
 <p>A warm spiced pumpkin filling in a flaky crust. A classic Thanksgiving dessert.</p>
+<blockquote class="prep-time">Prep Time: 50mins</blockquote>
 </div>
 </div>
 
@@ -97,6 +136,7 @@ margin-top: 30px;
 <div class="card-content">
 <h3>Homemade Cranberry Sauce</h3>
 <p>Fresh cranberries simmered with sugar and orange zest for a sweet and tart side dish.</p>
+<blockquote class="prep-time">Prep Time: 13mins</blockquote>
 </div>
 </div>
 
@@ -106,6 +146,7 @@ margin-top: 30px;
 <div class="card-content">
 <h3>Herb Bread Stuffing</h3>
 <p>Soft bread cubes mixed with celery, onions, herbs, and broth, baked until golden.</p>
+<blockquote class="prep-time">Prep Time: 40mins</blockquote>
 </div>
 </div>
 </div>

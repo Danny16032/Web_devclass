@@ -5,28 +5,21 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Single Price Grid Component</title>
 
-<style>
-    :root {
 
-        --teal-500: hsl(179, 62%, 43%);
-        --green-400: hsl(71, 73%, 54%);
-  
-        --teal-100: hsl(204, 43%, 93%);
-        --gray-500: hsl(218, 22%, 67%);
-      
-        --body-font: 16px;
-        --font: 'Arial', sans-serif;
-    }
+<link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap" rel="stylesheet">
+
+<style>
 
     body {
         margin: 0;
         padding: 0;
-        font-family: var(--font);
         background: var(--teal-100);
         display: flex;
         justify-content: center;
         align-items: center;
         min-height: 100vh;
+        font-family: "Karla", sans-serif;
+        font-size: 16px;
     }
 
     .container {
@@ -36,71 +29,80 @@
         border-radius: 10px;
         overflow: hidden;
         box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+        font-family: "Karla", sans-serif;
     }
 
- 
     .top {
         padding: 40px;
+        font-family: "Karla", sans-serif;
     }
 
     .top h1 {
         color: var(--teal-500);
         margin: 0;
         font-size: 28px;
-        font-weight: bold;
+        font-weight: 700;
+        font-family: "Karla", sans-serif;
     }
 
     .top .guarantee {
         color: var(--green-400);
-        font-weight: bold;
+        font-weight: 700;
         margin-top: 15px;
         font-size: 18px;
+        font-family: "Karla", sans-serif;
     }
 
     .top p {
         margin-top: 15px;
-        font-size: var(--body-font);
         color: var(--gray-500);
         line-height: 1.6;
+        font-weight: 400;
+        font-family: "Karla", sans-serif;
     }
 
     .grid {
         display: grid;
         grid-template-columns: 1fr 1fr;
+        font-family: "Karla", sans-serif;
     }
 
-  
     .left {
         background: var(--teal-500);
         color: white;
         padding: 40px;
+        font-family: "Karla", sans-serif;
     }
 
     .left h2 {
         margin: 0;
         font-size: 20px;
+        font-weight: 700;
+        font-family: "Karla", sans-serif;
     }
 
     .price {
         margin-top: 15px;
         font-size: 40px;
-        font-weight: bold;
+        font-weight: 700;
         display: flex;
         align-items: center;
         gap: 10px;
+        font-family: "Karla", sans-serif;
     }
 
     .price span {
         font-size: 18px;
-        font-weight: normal;
+        font-weight: 400;
         opacity: 0.85;
+        font-family: "Karla", sans-serif;
     }
 
     .left p {
         margin-top: 10px;
-        font-size: 16px;
         opacity: 0.9;
-        margin-bottom: 25px;
+        font-weight: 400;
+        font-family: "Karla", sans-serif;
     }
 
     .signup-btn {
@@ -111,10 +113,12 @@
         border: none;
         border-radius: 8px;
         font-size: 16px;
-        font-weight: bold;
+        font-weight: 700;
         cursor: pointer;
         box-shadow: 0 4px 10px rgba(0,0,0,0.15);
         transition: 0.2s;
+        margin-top: 20px;
+        font-family: "Karla", sans-serif;
     }
 
     .signup-btn:hover {
@@ -125,11 +129,14 @@
         background: hsl(179, 55%, 48%);
         color: white;
         padding: 40px;
+        font-family: "Karla", sans-serif;
     }
 
     .right h2 {
         margin: 0 0 15px 0;
         font-size: 20px;
+        font-weight: 700;
+        font-family: "Karla", sans-serif;
     }
 
     .right ul {
@@ -138,9 +145,17 @@
         margin: 0;
         line-height: 1.7;
         opacity: 0.95;
+        font-weight: 400;
+        font-family: "Karla", sans-serif;
     }
 
-   
+    :root {
+        --teal-500: hsl(179, 62%, 43%);
+        --green-400: hsl(71, 73%, 54%);
+        --teal-100: hsl(204, 43%, 93%);
+        --gray-500: hsl(218, 22%, 67%);
+    }
+
     @media (max-width: 650px) {
         .grid {
             grid-template-columns: 1fr;
@@ -153,7 +168,6 @@
 
 <div class="container">
 
-   
     <div class="top">
         <h1>Join our community</h1>
         <div class="guarantee">30-day, hassle-free money back guarantee</div>
@@ -163,17 +177,21 @@
         </p>
     </div>
 
-   
     <div class="grid">
+        <div class="left">
+            <h2>Monthly Subscription</h2>
+            <div class="price">
+                $29 <span>per month</span>
+            </div>
+            <p>Full access for less than $1 a day</p>
+            <button class="signup-btn">Sign Up</button>
+        </div>
 
-      
-
-       
         <div class="right">
             <h2>Why Us</h2>
             <ul>
                 <li>Tutorials by industry experts</li>
-                <li>Peer & expert code review</li>
+                <li>Peer &amp; expert code review</li>
                 <li>Coding exercises</li>
                 <li>Access to our GitHub repos</li>
                 <li>Community forum</li>
@@ -181,7 +199,6 @@
                 <li>New videos every week</li>
             </ul>
         </div>
-
     </div>
 
 </div>
