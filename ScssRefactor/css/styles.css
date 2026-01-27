@@ -1,0 +1,53 @@
+.header {
+  background-color: #6c5ce7;
+  padding: 20px;
+}
+.header h1 {
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+}
+.header nav a {
+  color: #ffffff;
+  text-decoration: none;
+  margin-right: 15px;
+}
+.header nav a:hover {
+  color: #a29bfe;
+}
+
+.profile-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 1px solid #6c5ce7;
+  padding: 20px;
+}
+
+.contact-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #f9f9f9;
+  padding: 10px;
+}
+
+.btn {
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  color: #ffffff;
+}
+.btn-primary {
+  background-color: #6c5ce7;
+}
+.btn-primary:hover {
+  background-color: rgb(67.9090909091, 47.5454545455, 224.4545454545);
+}
+.btn-secondary {
+  background-color: #a29bfe;
+}
+.btn-secondary:hover {
+  background-color: #6c5ce7;
+}/*# sourceMappingURL=styles.css.map */

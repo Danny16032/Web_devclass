@@ -1,0 +1,65 @@
+$primary: #6c5ce7;
+$secondary: #a29bfe;
+
+@mixin center-column {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.header {
+    background-color: $primary;
+    padding: 20px;
+
+    h1 {
+        color: $white;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    nav {
+        a {
+            color: $white;
+            text-decoration: none;
+            margin-right: 15px;
+
+            &:hover {
+                color: $secondary;
+            }
+        }
+    }
+}
+
+.profile-card {
+    @include center-column;
+    border: 1px solid $primary;
+    padding: 20px;
+}
+
+.contact-box {
+    @include center-column;
+    padding: 10px;
+}
+
+.btn {
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    color: $white;
+
+    &-primary {
+        background-color: $primary;
+
+        &:hover {
+            background-color: darken($primary, 10%);
+        }
+    }
+
+    &-secondary {
+        background-color: $secondary;
+
+        &:hover {
+            background-color: $primary;
+        }
+    }
+}

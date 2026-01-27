@@ -1,0 +1,90 @@
+
+// VARIABLES
+$primary-color: #add8e6;
+$secondary-color: rgb(110, 204, 110);
+$dark-text: #2c3e50;
+$rounded: 8px;
+
+// NESTING
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: lightgrey;
+    margin: 0;
+}
+
+//MIXIN - reusable "functions" for css blocks
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+//NESTING
+.myHeader {
+    @include flex-center; //using the mixin
+    background-color: $dark-text;
+    color: whitesmoke;
+    padding: 40px;
+    text-align: center;
+
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  } 
+}
+
+.container {
+    display:flex;
+    gap: 20px;
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+
+    .card {
+        background-color: whitesmoke;
+        padding: 20px;
+        border-radius: $rounded;
+        box-shadow: 0 4px 6px black;
+        transition: transform 0.3s ease;
+        width: 100%;
+
+
+        //PARENT SELECTOR (&)
+        &:hover{
+            transform: translateY(-5px);
+        }
+
+
+
+        h3{
+            color: $primary-color;
+        }
+
+        a {
+            background-color: $primary-color;
+            border: none;
+            color: white;
+            padding: 10px 15px;
+            border-radius: calc($rounded - 2px);
+            text-decoration: none;
+
+            &:hover {
+                background-color: darken($primary-color, 10%);
+            }
+        }
+
+        &.featured {
+            border: 2px solid $secondary-color;
+            h3 {
+                color: $secondary-color;
+            }
+            &:hover anchor {
+            transform: translateY(-5px);
+            background-color: darken($primary-color, 20%);
+        }
+        }
+    }
+}
