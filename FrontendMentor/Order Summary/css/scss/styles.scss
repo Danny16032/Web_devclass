@@ -1,8 +1,9 @@
 $primary-light-blue: hsl(225, 100%, 94%);
 $primary-blue: hsl(245, 75%, 52%);
-$neutral-light-blue:hsl(225, 100%, 98%);
+$neutral-light-blue: hsl(225, 100%, 98%);
 $neutral-gray: hsl(224, 23%, 55%);
 $neutral-blue: hsl(223, 47%, 23%);
+$white: #ffffff;
 
 * {
   box-sizing: border-box;
@@ -10,98 +11,86 @@ $neutral-blue: hsl(223, 47%, 23%);
 
 body {
   margin: 0;
-  font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
-  background: $bg;
-}
-
-.page {
-  min-height: 100vh;
+  font-family: "Red Hat Display", sans-serif; // Standard for this design
+  background-color: $primary-light-blue;
+  background-image: url('../images/pattern-background-desktop.svg'); // The wavy background
+  background-repeat: no-repeat;
+  background-size: contain;
   display: grid;
   place-items: center;
-  padding: 2rem;
+  min-height: 100vh;
+  padding: 1.5rem;
 }
 
-.card {
-  width: 360px;
+.order-card {
+  width: 100%;
+  max-width: 400px;
   background: $white;
-  border-radius: 18px;
+  border-radius: 20px;
   overflow: hidden;
-  box-shadow: 0 20px 40px rgba(59, 47, 230, 0.2);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
   text-align: center;
 
-  &__header {
-    background: $primary;
-    padding: 2rem;
-
-    img {
-      max-width: 100%;
-      height: auto;
-    }
+  .card__header img {
+    width: 100%;
+    display: block; // Removes unwanted bottom gap
   }
 
-  &__body {
-    padding: 2rem;
+  .card__body {
+    padding: 2.5rem 10%;
   }
 }
 
 h1 {
   margin: 0 0 1rem;
-  font-size: 1.5rem;
-  color: $text-dark;
+  font-size: 1.7rem;
+  font-weight: 900;
+  color: $neutral-blue;
 }
 
 .description {
-  font-size: 0.95rem;
-  color: $text-muted;
-  line-height: 1.6;
+  font-size: 1rem;
+  color: $neutral-gray;
+  line-height: 1.5;
   margin-bottom: 1.5rem;
 }
 
 .plan {
-  background: $primary-light;
+  background: $neutral-light-blue;
   border-radius: 12px;
-  padding: 1rem;
+  padding: 1.2rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 1.5rem;
+  margin-bottom: 2rem;
 
   &__info {
     display: flex;
     align-items: center;
-    gap: 0.75rem;
+    gap: 1rem;
     text-align: left;
 
     strong {
       display: block;
-      font-size: 0.9rem;
-      color: $text-dark;
+      font-size: 0.95rem;
+      color: $neutral-blue;
     }
 
     span {
-      font-size: 0.85rem;
-      color: $text-muted;
+      font-size: 0.9rem;
+      color: $neutral-gray;
     }
-  }
-
-  &__icon {
-    background: $white;
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    display: grid;
-    place-items: center;
-    font-size: 1.2rem;
   }
 
   &__change {
     font-size: 0.85rem;
-    color: $primary;
-    font-weight: 600;
-    text-decoration: none;
+    color: $primary-blue;
+    font-weight: 700;
+    text-decoration: underline;
 
     &:hover {
-      text-decoration: underline;
+      text-decoration: none;
+      opacity: 0.7;
     }
   }
 }
@@ -111,28 +100,29 @@ h1 {
   border: none;
   border-radius: 12px;
   font-size: 0.95rem;
-  font-weight: 600;
+  font-weight: 900;
   cursor: pointer;
+  transition: all 0.3s ease;
 
   &--primary {
-    background: $primary;
+    background: $primary-blue;
     color: $white;
-    padding: 0.9rem;
-    box-shadow: 0 10px 20px rgba(59, 47, 230, 0.35);
+    padding: 1rem;
+    box-shadow: 0 15px 20px rgba(56, 41, 224, 0.25);
     margin-bottom: 1rem;
 
     &:hover {
-      background: darken($primary, 5%);
+      background: lighten($primary-blue, 10%);
     }
   }
 
   &--link {
     background: none;
-    color: $text-muted;
+    color: $neutral-gray;
     padding: 0.5rem;
 
     &:hover {
-      color: $text-dark;
+      color: $neutral-blue;
     }
   }
 }

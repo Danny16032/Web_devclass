@@ -1,0 +1,78 @@
+.flex {
+  display: flex;
+  gap: 30px;
+}
+
+label {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 1;
+  font-family: sans-serif;
+  color: #131;
+}
+
+.Basketball {
+  color: red;
+}
+
+.Swimming {
+  color: lightblue;
+}
+
+.Hockey {
+  color: blue;
+}
+
+.Tennis {
+  color: yellow;
+}
+
+.Football {
+  color: brown;
+}
+
+input {
+  padding: 8px 14px;
+  font-size: 1.2rem;
+  border: 1px solid #163;
+  border-radius: 8px;
+  width: 300px;
+  background-color: antiquewhite;
+}
+
+input:hover {
+  border-color: aqua;
+}
+
+input:focus {
+  border-color: rgb(48, 133, 124);
+  outline: none;
+  border-width: 6px;
+  border-radius: 18px;
+  background-color: whitesmoke;
+}
+
+textarea {
+  width: 150px;
+  height: 150px;
+  min-width: 50px;
+  min-height: 50px;
+  max-height: 500px;
+  max-width: 500px;
+}
+
+input [type=checkbox], input [type=radio] {
+  width: auto;
+}
+
+input[type=button], input[type=reset], input[type=submit] {
+  width: auto;
+  background-color: rgb(124, 165, 124);
+  color: darkcyan;
+  cursor: pointer;
+}
+
+input [type=checkbox]:checked + label {
+  color: black;
+}/*# sourceMappingURL=styles.css.map */

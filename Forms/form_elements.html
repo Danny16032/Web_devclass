@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Elements</title>
+    
+    <style>
+        .flex {
+            display:flex;
+            gap: 30px;
+        }
+
+        label {
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            font-weight: 700;
+            letter-spacing: 1;
+            font-family: sans-serif;
+            color: #131;
+
+        }
+
+        .Basketball {
+            color: red;
+        }
+
+        .Swimming {
+            color:lightblue;
+        }
+        
+        .Hockey {
+            color:blue;
+        }
+
+        .Tennis {
+            color: yellow;
+        }
+
+        .Football {
+            color:brown
+        }
+
+        input {
+            padding: 8px 14px;
+            font-size: 1.2rem;
+            border: 1px solid #163;
+            border-radius: 8px;
+        width: 300px;
+        background-color: antiquewhite;
+        }
+
+        input:hover {
+            border-color: aqua;
+        }
+
+        input:focus {
+            border-color: rgb(48, 133, 124);
+            outline: none;
+            border-width: 6px;
+            border-radius: 18px;
+            background-color: whitesmoke;
+        }
+
+        textarea {
+            width: 150px;
+            height: 150px;
+            min-width: 50px;
+            min-height: 50px;
+            max-height: 500px;
+            max-width: 500px;
+        }
+
+        input [type=checkbox], input [type=radio] {
+            width: auto;
+        }
+
+        input[type=button], input[type=reset], input[type=submit] {
+            width:auto;
+            background-color: rgb(124, 165, 124);
+            color: darkcyan;
+            cursor: pointer;
+        }
+
+        input [type=checkbox]:checked +  label {
+            color:black
+        }
+    </style>
+</head>
+<body>
+    <h1>Form Elements</h1>
+    <form action="#" method="POST" autocomplete="on">
+        <h2>Input</h2>
+
+        
+        <div class="flex">
+            <div>
+                <h3>Example</h3>
+                <label for="username">Username</label><br>
+                <input type="text" name="username" id= "username" placeholder="Username" maxlength="10" required> 
+            </div>
+
+            <div>
+                <h3>Description</h3>
+                <p><strong>type="text"</strong> is a single line textbox</p>
+            </div>
+        </div>
+
+         <div class="flex">
+            <div>
+                <h3>Example</h3>
+                <label for="password">Password</label><br>
+                <input type="password" name="password" id="password" placeholder="Password"> 
+            </div>
+
+            <div>
+                <h3>Description</h3>
+                <p><strong>type="password"</strong> is a single line textbox that masks the text</p>
+            </div>
+        </div>
+
+        <div class="flex">
+            <div>
+                <h3>Example</h3>
+                <label for="email">Email</label><br>
+                <input type="email" name="email" id="email" placeholder="email@cougarmail.email"> 
+            </div>
+
+            <div>
+                <h3>Description</h3>
+                <p><strong>type="email"</strong> is a single line textbox that is used for email</p>
+            </div>
+        </div>
+
+         <div class="flex">
+            <div>
+                <h3>Example</h3>
+                <label for="phone">Phone Number</label><br>
+                <input type="tel" name="phone" id= "phone" placeholder="Phone Number" value="911" disabled> 
+            </div>
+
+            <div>
+                <h3>Description</h3>
+                <p><strong>type="tel"</strong> is a single line textbox for phone number</p>
+            </div>
+        </div>
+
+        <div class="flex">
+            <div>
+                <h3>Example</h3>
+                <label for="number">Pick A Number (-100 to 100)</label><br>
+                <input type="number" name="number" id= "number"placeholder="Pick a Number" step="2" min="-100" max="100"> 
+            </div>
+
+            <div>
+                <h3>Description</h3>
+                <p><strong>type="number"</strong> is a textbox that allows numbers</p>
+            </div>
+        </div>
+
+        <div class="flex">
+            <div>
+                <h3>Example</h3>
+                <label for="message">Message</label><br>
+                    <textarea name="message" id="message" placeholder="Enter a message..." rows="5" cols="50"></textarea>
+            </div>
+ 
+            <div>
+                <h3>Description</h3>
+                <p><strong>type="textarea"</strong> is a multi-line textbox</p>
+            </div>
+        </div>
+
+        <div class="flex">
+            <div>
+                <h3>Example</h3>
+                <input type="checkbox" id="Pepperoni"> <label for="Pepperoni"> Pepperoni </label><br> 
+                <input type="checkbox" id="Ham"> <label for="Ham"> Ham <br> </label>
+                <input type="checkbox" id="Sausage"checked>  <label for="Sausage"> Sausage <br> </label>
+                <input type="checkbox" id="Bacon">  <label for="Bacon"> Bacon <br> </label>
+                <input type="checkbox" id="Meatballs" checked> <label for="Meatballs"> Meatballs <br> </label>
+            </div>
+
+            <div>
+                <h3>Description</h3>
+                <p><strong>type="checkbox"</strong> is a checkbox where multiple can be selected</p>
+            </div>
+        </div>
+
+        <div class="flex">
+            <div>
+                <h3>Example</h3>
+                <input type="radio" name="example" id="Basketball"> <label for="Basketball" class="Basketball"> Basketball </label><br> 
+                <input type="radio" name="example" id="Swimming"> <label for="Swimming" class="Swimming"> Swimming </label><br> 
+                <input type="radio" name="example" id="Tennis"> <label for="Tennis" class="Tennis"> Tennis </label><br> 
+                <input type="radio" name="example" id="Hockey"> <label for="Hockey" class="Hockey"> Hockey </label><br> 
+                <input type="radio" name="example" id="Football" checked> <label for="Football" class="Football"> Football </label><br>  
+            </div>
+
+            <div>
+                <h3>Description</h3>
+                <p><strong>type="radio"</strong> is a radio where only one can be selected</p>
+            </div>
+        </div>
+
+        <div class="flex">
+            <div>
+                <h3>Example</h3>
+            <select name="nfl" id="nfl">
+                <option value="" selected disabled>Select Your Team</option>
+                <optgroup label="NFC">
+                    <option value="falcons">Falcons</option>
+                    <option value="panthers">Panthers</option>
+                    <option value="bucs">Bucs</option>
+                    <option value="rams">Rams</option>
+                </optgroup>
+
+                <optgroup label="AFC">
+                    <option value="dolphins">Dolphins</option>
+                    <option value="cowboys">Cowboys</option>
+                    <option value="bills">Bills</option>
+                    <option value="seahawks">Seahawks</option>
+                  
+                </optgroup>
+            </select>
+            </div>
+
+            <div>
+                <h3>Description</h3>
+                <p><strong>type="button"</strong> is a generic button with no default action</p>
+            </div>
+        </div>
+
+        <div class="flex">
+            <div>
+                <h3>Example</h3>
+                <input type="button"> 
+            </div>
+
+            <div>
+                <h3>Description</h3>
+                <p><strong>type="button"</strong> is a generic button with no default action</p>
+            </div>
+        </div>
+
+        <div class="flex">
+            <div>
+                <h3>Example</h3>
+                <input type="reset"> 
+            </div>
+
+            <div>
+                <h3>Description</h3>
+                <p><strong>type="reset"</strong> is a button with a default action that resets your form</p>
+            </div>
+        </div>
+
+        <div class="flex">
+            <div>
+                <h3>Example</h3>
+                <input type="submit"> 
+            </div>
+
+            <div>
+                <h3>Description</h3>
+                <p><strong>type="submit"</strong> is a button with a default action that submits your form</p>
+            </div>
+        </div>
+    </form>
+</body>
+</html>
