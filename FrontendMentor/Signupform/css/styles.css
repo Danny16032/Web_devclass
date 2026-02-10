@@ -1,78 +1,113 @@
-.flex {
+div {
+  width: 50%;
+}
+
+.card {
+  background-color: hsl(248, 32%, 49%);
+  font-family: "Poppins", sans-serif;
+  display: inline-block;
+  text-align: center;
+  font-size: 16px;
+  border-radius: 10px;
+  box-shadow: 0 10px 13px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+  font-size: 16px;
+  margin-top: 100px;
+  margin-right: 100px;
+  height: 50px;
+  width: 500px;
+  margin-left: 850px;
+  font-size: small;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: hsl(0, 100%, 74%);
+  background-image: url("../images/bg-intro-mobile.png");
+  margin: 0;
+  font-size: 16px;
+  color: rgb(255, 255, 255);
+  align-items: center;
+  text-align: center;
+  margin-left: 20px;
+}
+@media (max-width: 375px) {
+  body {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+body body font {
+  font-family: "Poppins", sans-serif;
+  color: rgb(255, 255, 255);
+}
+body main {
   display: flex;
-  gap: 30px;
+  justify-content: space-between;
+  align-items: center;
 }
-
-label {
-  font-size: 0.8rem;
-  text-transform: uppercase;
-  font-weight: 700;
-  letter-spacing: 1;
-  font-family: sans-serif;
-  color: #131;
+body main div {
+  width: 50%;
 }
-
-.Basketball {
-  color: red;
+body main .card {
+  align-items: column;
+  background-color: rgb(255, 255, 255);
+  font-family: "Poppins", sans-serif;
+  width: 500px;
+  height: 350px;
+  border-radius: 10px;
+  box-shadow: 0 10px 13px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+  font-size: 16px;
+  margin-top: 30px;
+  margin-right: 100px;
+  margin-left: 20px;
 }
-
-.Swimming {
-  color: lightblue;
+body main .card head {
+  background-color: hsl(248, 32%, 49%);
 }
-
-.Hockey {
-  color: blue;
-}
-
-.Tennis {
-  color: yellow;
-}
-
-.Football {
-  color: brown;
-}
-
-input {
-  padding: 8px 14px;
-  font-size: 1.2rem;
-  border: 1px solid #163;
-  border-radius: 8px;
-  width: 300px;
-  background-color: antiquewhite;
-}
-
-input:hover {
-  border-color: aqua;
-}
-
-input:focus {
-  border-color: rgb(48, 133, 124);
-  outline: none;
-  border-width: 6px;
-  border-radius: 18px;
-  background-color: whitesmoke;
-}
-
-textarea {
+body main .card textarea {
   width: 150px;
   height: 150px;
   min-width: 50px;
   min-height: 50px;
-  max-height: 500px;
+  max-height: 400px;
   max-width: 500px;
 }
-
-input [type=checkbox], input [type=radio] {
-  width: auto;
+body main .card input {
+  display: block;
+  text-align: left;
+  padding: 8px 14px;
+  font-size: 1rem;
+  border: 1px solid hsl(246, 25%, 77%);
+  border-radius: 8px;
+  margin-left: 20px;
+  margin-top: 20px;
+  width: 420px;
+  font-size: small;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
 }
-
-input[type=button], input[type=reset], input[type=submit] {
-  width: auto;
-  background-color: rgb(124, 165, 124);
-  color: darkcyan;
-  cursor: pointer;
+body main .card .hover {
+  transform: translateY(-5px);
 }
-
-input [type=checkbox]:checked + label {
-  color: black;
+body main .card a {
+  color: hsl(0, 100%, 74%);
+}
+body main .card form {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  color: hsl(246, 25%, 77%);
+  font-size: 0.8rem;
+  font-size: xx-small;
+}
+body main .card form .submit {
+  background-color: hsl(154, 59%, 51%);
+  color: rgb(255, 255, 255);
+  font-family: "Poppins", sans-serif;
+  width: 450px;
+  align-items: center;
+  font-weight: 500;
+  font-size: small;
+  text-align: center;
 }/*# sourceMappingURL=styles.css.map */

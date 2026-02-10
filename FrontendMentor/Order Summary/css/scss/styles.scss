@@ -7,21 +7,11 @@ $white: #ffffff;
 
 * {
   box-sizing: border-box;
-}
-
-body {
-  margin: 0;
-  font-family: "Red Hat Display", sans-serif; // Standard for this design
-  background-color: $primary-light-blue;
-  background-image: url('../images/pattern-background-desktop.svg'); // The wavy background
-  background-repeat: no-repeat;
-  background-size: contain;
   display: grid;
   place-items: center;
   min-height: 100vh;
   padding: 1.5rem;
 }
-
 .order-card {
   width: 100%;
   max-width: 400px;
@@ -33,7 +23,7 @@ body {
 
   .card__header img {
     width: 100%;
-    display: block; // Removes unwanted bottom gap
+    display: block; 
   }
 
   .card__body {
