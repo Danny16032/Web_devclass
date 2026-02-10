@@ -96,6 +96,4 @@ h1 {
   color: hsl(224, 23%, 55%);
   padding: 0.5rem;
 }
-.btn--link:hover {
-  color: hsl(223, 47%, 23%);
-}/*# sourceMappingURL=styles.css.map */
+.btn--link:hover
